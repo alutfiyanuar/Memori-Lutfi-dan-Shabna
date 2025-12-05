@@ -1,0 +1,963 @@
+:root {
+  --cream: #8a7650;
+  --bg: #0a0a0a;
+  --white: rgba(255, 255, 255, 0.9);
+  --blue: #1e293b;
+  --lblue: #64748b;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(img/herobg.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "Handlee", cursive;
+  font-size: 6rem;
+  color: #fff0f5;
+  text-shadow: var(--shadow);
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.hero h4 {
+  text-shadow: var(--shadow);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  text-shadow: var(--shadow);
+}
+
+.hero a {
+  color: var(--blue);
+  background-color: var(--white);
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.hero span {
+  text-transform: none;
+}
+
+.hero a:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Handlee", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.mynavbar .navbar-nav {
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(img/bgweb3.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: -3.4rem;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  text-shadow: var(--shadow);
+}
+
+.home h4 {
+  color: var(--blue);
+}
+
+.home p {
+  margin-top: 1.5rem;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.home .couple {
+  margin-top: 25px;
+  text-shadow: none;
+}
+
+.home .couple h2 {
+  font-family: Purple-Purse;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  font-style: italic;
+}
+
+.home .couple h4 {
+  font-size: 1.3rem;
+  color: #0a0a0a;
+}
+
+.home .couple img {
+  width: 100%;
+  border-radius: 5%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.home .ayat {
+  font-style: italic;
+  color: var(--blue);
+  text-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  margin-top: 35px;
+}
+
+.event,
+.rsvp {
+  min-height: 100vh;
+  color: var(--white);
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.event h2 {
+  color: var(--lblue);
+  font-family: Handlee;
+  font-weight: bold;
+  font-size: 5rem;
+  text-shadow: var(--shadow);
+}
+
+.event .alamat {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.event .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.event .card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #999;
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.event .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.event .card-body {
+  font-size: 1rem;
+}
+
+.event .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.story,
+.gift {
+  background-image: url(img/SALE.png);
+}
+
+.story,
+.gallery,
+.gift {
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.story span,
+.gallery span,
+.gift span {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: 500;
+}
+
+.story p,
+.gallery p {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: "Press Start 2P", system-ui;
+  text-shadow: -1px 1px 1px #eff2f6;
+}
+
+.gallery p {
+  text-align: center;
+}
+
+.story h2,
+.gallery h2,
+.gift h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 3rem;
+  color: #000000;
+  font-weight: bold;
+  text-shadow: -2px 2px 0 #ffffff;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: var(--blue);
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-img {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  left: 50%;
+  background-color: var(--blue);
+  border-radius: 30%;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid var(--blue);
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid var(--blue);
+  border-right: 0 solid var(--blue);
+  border-bottom: 15px solid transparent;
+  top: 90px;
+  right: -15px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  width: 40%;
+  float: right;
+  border: 1px solid var(--blue);
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 0 solid var(--blue);
+  border-right: 15px solid var(--blue);
+  border-bottom: 15px solid transparent;
+  top: 90px;
+  right: auto;
+  left: -15px;
+}
+
+.gallery {
+  background-image: url(img/tekstur2.png);
+}
+
+.gallery .img-fluid {
+  box-shadow: var(--shadow);
+}
+
+.rsvp {
+  background-image: url(img/awan1.png);
+  color: var(--blue);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.rsvp h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 3rem;
+  text-shadow: 1px 2px 0 #ffffff;
+  margin-top: 10px;
+}
+
+.rsvp span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.rsvp p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.rsvp .card {
+  background-color: #eff2f6;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.rsvp .card-body {
+  width: 100%;
+  height: 100%;
+  background-color: #eff2f6;
+  border-bottom: 1px solid var(--blue);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* GIF */
+
+/* Tambahkan di bagian bawah file style.css Anda */
+
+.potz-gif {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  z-index: 10;
+}
+
+.musik-gif {
+  position: absolute;
+  bottom: -8px;
+  right: 30%;
+  z-index: 10;
+}
+
+.musik-gif img {
+  max-width: 73px;
+  height: auto;
+}
+
+.potz-gif img {
+  max-width: 80px;
+  height: auto;
+}
+
+.cat-gif {
+  position: absolute;
+  top: -34px;
+  right: 75px;
+  z-index: 10;
+  transform: scaleX(-1); /* <-- Tambahkan scaleX(-1) di sini */
+  max-width: 50px;
+  height: auto;
+}
+
+.cat2-gif {
+  position: absolute;
+  top: -34px;
+  left: 65px;
+  max-width: 50px;
+  height: auto;
+}
+
+.form-label {
+  color: var(--blue);
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+/* Tambahkan di bagian bawah file style.css Anda */
+.love-gif {
+  display: none;
+}
+/* Gaya untuk kotak avatar */
+.avatar-box {
+  display: inline-block;
+  width: 45px; /* Ukuran lebar tetap */
+  height: 45px; /* Ukuran tinggi tetap */
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #f8f9fa; /* Warna latar belakang default */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan default */
+  transition: all 0.2s ease;
+}
+
+.avatar-box:hover {
+  background-color: #e9ecef; /* Warna latar belakang saat hover */
+  transform: translateY(-2px); /* Sedikit naik saat hover */
+}
+
+/* Gaya untuk kotak avatar yang dipilih */
+.avatar-box.selected {
+  background-color: #fff; /* Warna latar belakang putih saat dipilih */
+  border-color: #007bff; /* Border biru tebal */
+  box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.2), 0 0 0 2px #eaeaea; /* Bayangan lebih tebal dan border dalam */
+  transform: translateY(-4px) scale(1.08); /* Menonjol dan sedikit membesar */
+}
+
+/* Gaya untuk gambar avatar di dalam kotak */
+.avatar-box .avatar-option {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px; /* Radius kecil untuk gambar agar tidak tumpah */
+}
+
+/* Komentar */
+
+.jumlah-komen {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.jumlah-comment {
+  color: var(--blue);
+  position: relative; /* Atau fixed */
+  top: -2px; /* Nilai negatif untuk memindahkan ke atas */
+  left: -5px; /* Untuk memposisikan di tepi kiri */
+  padding: 10px;
+}
+
+.comment2 {
+  color: var(--blue);
+  position: relative; /* Atau fixed */
+  top: -2px; /* Nilai negatif untuk memindahkan ke atas */
+  left: -16px; /* Untuk memposisikan di tepi kiri */
+  letter-spacing: 0 !important;
+}
+
+.comments {
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.parents {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--blue);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #f0f2f5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.parents:hover {
+  background-color: #e9ebee;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.parents::-webkit-scrollbar {
+  display: none;
+}
+
+.parents .box {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.parents img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-right: 12px;
+  margin-left: 5px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+.parents h1 {
+  font-size: 1.3rem;
+  text-transform: none;
+  font-weight: bold;
+  color: #1c1e21;
+}
+
+.parents p {
+  margin: 10px 0;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 500;
+  color: #1c1e21;
+  line-height: 1.4;
+}
+
+.parents .box .date {
+  display: block;
+  margin-bottom: 6px;
+  top: -50px;
+  left: 0;
+  font-size: 0.7rem;
+  color: #65676b;
+  font-weight: 500;
+}
+
+.reactions {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.reaction-btn {
+  background: none;
+  border: none;
+  color: #65676b;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.reaction-btn:hover {
+  background-color: #e4e6eb;
+  color: #1b74e4;
+}
+
+.reaction-btn i {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.reaction-count {
+  font-size: 13px;
+  color: #65676b;
+}
+
+.gift p {
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.gift li {
+  text-align: center;
+}
+
+.gift img {
+  max-width: 20%;
+  margin-left: -10px;
+  object-position: center;
+}
+
+.gift img.mandiri {
+  max-width: 25%;
+  margin-left: 0;
+}
+
+.gift img.qris {
+  max-width: 25%;
+  margin-left: 0;
+}
+
+footer {
+  padding: 3rem;
+  background-image: url(img/tanah.png);
+  color: white;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--lblue);
+}
+
+footer a:hover {
+  color: var(--white);
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 3.5rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 2.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+  color: var(--white);
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+iframe {
+  border-radius: 5px;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  .cat-gif {
+    top: -15px;
+    right: 58px;
+  }
+
+  .cat2-gif {
+    top: -15px;
+    left: 47px;
+  }
+}
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .hero::before {
+    background-image: url(img/herobg.jpg);
+  }
+
+  .home .couple img {
+    margin-top: 0;
+    width: 80%;
+  }
+
+  .cat-gif {
+    top: -28px;
+    right: 50px;
+    transform: scaleX(1);
+  }
+
+  .cat2-gif {
+    top: 21px;
+    left: 40px;
+    transform: scaleX(-1);
+  }
+
+  .love-gif {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: block;
+  }
+
+  .love-gif img {
+    max-width: 45px;
+    height: auto;
+  }
+
+  .home .couple .Shabna {
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-img {
+    left: 15px;
+    margin-left: 45px;
+    margin-top: 0;
+    width: 140px;
+    height: 140px;
+  }
+
+  .timeline li .timeline-panel {
+    float: right;
+    width: calc(100% - 200px);
+  }
+
+  .timeline li.timeline-inverted .timeline-panel {
+    width: calc(100% - 200px);
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+    top: 50px;
+  }
+
+  .timeline li.timeline-inverted .timeline-panel::before {
+    top: 50px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .cat-gif {
+    top: -29px;
+    right: 32px;
+  }
+
+  .cat2-gif {
+    top: 22px;
+  }
+
+  .rsvp .card {
+    margin-top: 20px;
+  }
+
+  .hero h4 {
+    margin-top: 30rem;
+  }
+
+  .hero p {
+    margin-bottom: 2rem;
+  }
+
+  .home {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .home .couple img {
+    margin-top: 5px;
+    width: 85%;
+  }
+
+  .event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  iframe {
+    width: 80%;
+  }
+
+  .event .resepsi {
+    margin-top: 20px;
+  }
+
+  .timeline li .timeline-img {
+    width: 110px;
+    height: 110px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 40%;
+  }
+
+  .timeline li .timeline-panel {
+    width: 70%;
+  }
+  .timeline li.timeline-inverted .timeline-panel {
+    width: 70%;
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 40px;
+  }
+
+  .timeline li.timeline-inverted .timeline-panel::before {
+    top: 40px;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .hero h4 {
+    margin-top: 30rem;
+  }
+
+  .cat2-gif {
+    top: 21px;
+  }
+
+  .hero p {
+    margin-bottom: 2rem;
+  }
+
+  .timeline li .timeline-panel {
+    width: 60%;
+  }
+  .timeline li.timeline-inverted .timeline-panel {
+    width: 60%;
+  }
+}
+
+/* ANIMASI */
+
+/* 1. Fade-in on Scroll */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 2. Smooth Button Hover */
+.btn,
+.reaction-btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.reaction-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Smooth Link Navigation */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--blue);
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* 6. Loading Animation for Buttons / Submit */
+.btn.loading::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 8. Heart Pulse on Like Click */
+.reaction-btn .bi-heart-fill {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
