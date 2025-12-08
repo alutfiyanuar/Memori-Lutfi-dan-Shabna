@@ -859,6 +859,10 @@ iframe {
     font-size: 60%;
   }
 
+  .hero::before {
+    background-position: 33% center; /* Geser ke kanan */
+  }
+
   .hero h4 {
     margin-top: 30rem;
   }
