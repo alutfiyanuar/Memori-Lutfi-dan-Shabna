@@ -860,7 +860,7 @@ iframe {
   }
 
   .hero::before {
-    background-position: 33% center; /* Geser ke kanan */
+    background-position: 40% center; /* Geser ke kanan */
   }
 
   .hero h4 {
@@ -868,7 +868,7 @@ iframe {
   }
 
   .cat2-gif {
-    top: 24px;
+    top: 26px;
   }
 
   .hero p {
