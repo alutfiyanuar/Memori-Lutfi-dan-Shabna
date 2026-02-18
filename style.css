@@ -19,8 +19,8 @@ body {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  background-image: url(img/herobg.jpg);
-  background-position: center;
+  background-image: url(img/herobg.png);
+  background-position: center 30%;
   background-size: cover;
   z-index: -1;
 }
@@ -453,7 +453,9 @@ body {
 .avatar-box.selected {
   background-color: #fff; /* Warna latar belakang putih saat dipilih */
   border-color: #007bff; /* Border biru tebal */
-  box-shadow: -2px 6px 8px rgba(0, 0, 0, 0.2), 0 0 0 2px #eaeaea; /* Bayangan lebih tebal dan border dalam */
+  box-shadow:
+    -2px 6px 8px rgba(0, 0, 0, 0.2),
+    0 0 0 2px #eaeaea; /* Bayangan lebih tebal dan border dalam */
   transform: translateY(-4px) scale(1.08); /* Menonjol dan sedikit membesar */
 }
 
@@ -706,7 +708,7 @@ iframe {
   }
 
   .hero::before {
-    background-image: url(img/herobg.jpg);
+    background-image: url(img/herobg.png);
   }
 
   .home .couple img {
